@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .box {
+               display: flex;
+          }
+
+          #for1 {
+               border: 2px solid;
+               width: 80px;
+               height: 30px;
+               font-size: 23px;
+               padding-left: 16px;
+               margin-right: 2px;
+               color: #fff;
+          }
+
+          #for2 {
+               border: 2px solid;
+               width: 80px;
+               height: 30px;
+               font-size: 23px;
+               padding-left: 16px;
+               margin-right: 2px;
+               color: #fff;
+          }
+
+          #for3 {
+               border: 2px solid;
+               width: 80px;
+               height: 30px;
+               font-size: 23px;
+               padding-left: 16px;
+               margin-right: 2px;
+               color: #fff;
+          }
+
+          .box4 {
+               width: 300px;
+               height: 350px;
+               border: 2px solid black;
+               font-size: 27px;
+          }
+
+          #box1 {
+               color: blue;
+          }
+
+          #box2 {
+               color: darkred;
+          }
+
+          #box3 {
+               color: rgb(255, 0, 0);
+          }
+
+          .box4 img {
+               width: 100%;
+               height: 100%;
+          }
+     </style>
+</head>
+
+<body>
+
+     <div class="box">
+
+          <div onclick="box1('box1','for1')" id="for1">check</div>
+          <div onclick="box1('box2','for2')" id="for2">check</div>
+          <div onclick="box1('box3','for3')" id="for3">check</div>
+     </div>
+
+     <div class="box4" id="box1">
+          <img src="add-image-in-flutter-hero.webp" />
+     </div>
+     <div class="box4" id="box2">
+          <img src="Beas-Kund.webp" />
+     </div>
+     <div class="box4" id="box3">
+          <img src="istockphoto-505239248-612x612.jpg" />
+     </div>
+
+     <script>
+          box1('box1', 'for1',)
+          function box1(boxName, coloname) {
+
+               document.getElementById('box1').style.display = 'none'
+               document.getElementById('box2').style.display = 'none'
+               document.getElementById('box3').style.display = 'none'
+               document.getElementById(boxName).style.display = 'block'
+
+               document.getElementById('for1').style.backgroundColor = 'black'
+               document.getElementById('for2').style.backgroundColor = 'black'
+               document.getElementById('for3').style.backgroundColor = 'black'
+               document.getElementById(coloname).style.backgroundColor = 'green'
+
+          }
+     </script>
+
+</body>
+
+</html>
